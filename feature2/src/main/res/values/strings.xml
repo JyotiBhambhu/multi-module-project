@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MultiModuleProject</string>
+    <string name="feature2fragment">Feature2Fragment</string>
+</resources>
