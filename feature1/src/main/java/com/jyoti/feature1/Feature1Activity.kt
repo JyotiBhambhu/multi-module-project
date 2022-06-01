@@ -1,16 +1,14 @@
 package com.jyoti.feature1
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.jyoti.feature1.di.DaggerFeatureOneComponent
 import com.jyoti.feature1.ui.feature1.Feature1Fragment
 import com.jyoti.gtbase.data.DataService
-import com.jyoti.gtbase.di.InjectUtils
 import com.jyoti.gtbase.network.NetworkService
+import com.jyoti.gtbase.ui.BaseActivity
 import javax.inject.Inject
 
-class Feature1Activity : AppCompatActivity() {
+class Feature1Activity : BaseActivity() {
 
     @Inject
     lateinit var dataService: DataService
@@ -26,12 +24,6 @@ class Feature1Activity : AppCompatActivity() {
                 .replace(R.id.container, Feature1Fragment.newInstance())
                 .commitNow()
         }
-
-        DaggerFeatureOneComponent
-            .builder()
-            .baseComponent(InjectUtils.provideBaseComponent(application))
-            .build()
-            .inject(this)
         Log.d("DaggerSample_Feature1", dataService.toString())
 
     }

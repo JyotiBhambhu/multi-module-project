@@ -1,18 +1,16 @@
 package com.jyoti.multimoduleproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.jyoti.feature1.Feature1Activity
+import com.jyoti.feature2.Feature2Activity
 import com.jyoti.gtbase.data.DataService
-import com.jyoti.gtbase.di.InjectUtils
 import com.jyoti.gtbase.network.NetworkService
-import com.jyoti.multimoduleproject.di.DaggerAppComponent
+import com.jyoti.gtbase.ui.BaseActivity
 import com.jyoti.multimoduleproject.ui.main.MainFragment
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     @Inject
     lateinit var dataService: DataService
@@ -29,12 +27,7 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
 
-        DaggerAppComponent
-            .builder()
-            .baseComponent(InjectUtils.provideBaseComponent(application))
-            .build()
-            .inject(this)
         Log.d("DaggerSample_Main", dataService.toString())
-        startActivity(Intent(this,Feature1Activity::class.java))
+        startActivity(Intent(this,Feature2Activity::class.java))
     }
 }

@@ -1,13 +1,27 @@
 package com.jyoti.multimoduleproject.di
 
-import com.jyoti.gtbase.di.ActivityScoped
+import android.app.Application
 import com.jyoti.gtbase.di.BaseComponent
-import com.jyoti.multimoduleproject.MainActivity
+import com.jyoti.multimoduleproject.application.MMTApplication
+import dagger.BindsInstance
 import dagger.Component
-import javax.inject.Singleton
+import dagger.android.AndroidInjectionModule
+import dagger.android.AndroidInjector
 
-@ActivityScoped
-@Component(dependencies = [BaseComponent::class], modules = [AppModule::class])
-interface AppComponent {
-    fun inject(activity: MainActivity)
+@AppScoped
+@Component(
+    dependencies = [BaseComponent::class],
+    modules = [AndroidInjectionModule::class,
+        ActivitiesBindingModule::class, AppModule::class]
+)
+interface AppComponent: AndroidInjector<MMTApplication> {
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        fun application(application: Application):
+                AppComponent.Builder
+        fun baseComponent(baseComponent: BaseComponent):
+                AppComponent.Builder
+        fun build(): AppComponent
+    }
 }

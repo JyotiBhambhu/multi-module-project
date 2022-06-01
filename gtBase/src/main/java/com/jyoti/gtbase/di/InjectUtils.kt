@@ -1,17 +1,11 @@
 package com.jyoti.gtbase.di
 
 import android.app.Application
+import com.jyoti.gtbase.application.BaseApplication
 
 object InjectUtils {
 
-    private lateinit var baseComponent: BaseComponent
-
-    fun provideBaseComponent(application: Application): BaseComponent{
-        if(!this::baseComponent.isInitialized){
-            baseComponent = DaggerBaseComponent.builder().build()
-            baseComponent.inject(application)
-        }
-
-        return baseComponent
+    fun provideBaseComponent(application: Application): BaseComponent {
+        return (application as BaseApplication).provideBaseComponent()
     }
 }
