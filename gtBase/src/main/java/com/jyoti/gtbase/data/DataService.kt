@@ -1,4 +1,8 @@
 package com.jyoti.gtbase.data
 
-class DataService {
+import javax.inject.Inject
+import javax.inject.Singleton
+
+@Singleton
+class DataService @Inject constructor() {
 }
