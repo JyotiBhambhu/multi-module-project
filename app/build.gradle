@@ -59,3 +59,11 @@ dependencies {
     api "com.google.dagger:hilt-android:$versions.daggerHiltAndroid"
     kapt "com.google.dagger:hilt-android-compiler:$versions.daggerHiltAndroid"
 }
+
+task installGitHook(type: Copy) {
+    from new File(rootProject.rootDir, "scripts/pre-commit")
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0775
+}
+
+tasks.getByPath(':app:preBuild').dependsOn installGitHook
