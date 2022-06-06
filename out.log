@@ -1,0 +1,215 @@
+> Task :app:installGitHook NO-SOURCE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :feature1:preBuild UP-TO-DATE
+> Task :feature1:preDebugBuild UP-TO-DATE
+> Task :gtBase:preBuild UP-TO-DATE
+> Task :gtBase:preDebugBuild UP-TO-DATE
+> Task :gtBase:compileDebugAidl NO-SOURCE
+> Task :feature1:compileDebugAidl NO-SOURCE
+> Task :feature2:preBuild UP-TO-DATE
+> Task :feature2:preDebugBuild UP-TO-DATE
+> Task :feature2:compileDebugAidl NO-SOURCE
+> Task :gtCommon:preBuild UP-TO-DATE
+> Task :gtCommon:preDebugBuild UP-TO-DATE
+> Task :gtCommon:compileDebugAidl NO-SOURCE
+> Task :gtCommonDesign:preBuild UP-TO-DATE
+> Task :gtCommonDesign:preDebugBuild UP-TO-DATE
+> Task :gtCommonDesign:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :feature1:packageDebugRenderscript NO-SOURCE
+> Task :feature2:packageDebugRenderscript NO-SOURCE
+> Task :gtBase:packageDebugRenderscript NO-SOURCE
+> Task :gtCommon:packageDebugRenderscript NO-SOURCE
+> Task :gtCommonDesign:packageDebugRenderscript NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:generateDebugBuildConfig
+> Task :feature1:writeDebugAarMetadata
+> Task :feature2:writeDebugAarMetadata
+> Task :gtBase:writeDebugAarMetadata
+> Task :gtCommon:writeDebugAarMetadata
+> Task :gtCommonDesign:writeDebugAarMetadata
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :feature1:compileDebugRenderscript NO-SOURCE
+> Task :feature1:generateDebugResValues
+> Task :feature1:generateDebugResources
+> Task :feature1:packageDebugResources
+> Task :feature2:compileDebugRenderscript NO-SOURCE
+> Task :feature2:generateDebugResValues
+> Task :feature2:generateDebugResources
+> Task :feature2:packageDebugResources
+> Task :gtBase:compileDebugRenderscript NO-SOURCE
+> Task :gtBase:generateDebugResValues
+> Task :gtBase:generateDebugResources
+> Task :gtBase:packageDebugResources
+> Task :gtCommon:compileDebugRenderscript NO-SOURCE
+> Task :gtCommon:generateDebugResValues
+> Task :gtCommon:generateDebugResources
+> Task :gtCommon:packageDebugResources
+> Task :gtCommonDesign:compileDebugRenderscript NO-SOURCE
+> Task :gtCommonDesign:generateDebugResValues
+> Task :gtCommonDesign:generateDebugResources
+> Task :gtCommonDesign:packageDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :feature1:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :feature2:extractDeepLinksDebug
+> Task :gtBase:extractDeepLinksDebug
+> Task :feature1:processDebugManifest
+> Task :feature2:processDebugManifest
+> Task :gtCommon:extractDeepLinksDebug
+> Task :gtBase:processDebugManifest
+> Task :gtCommonDesign:extractDeepLinksDebug
+> Task :gtCommon:processDebugManifest
+> Task :app:checkDebugAarMetadata
+> Task :feature1:compileDebugLibraryResources
+> Task :gtCommonDesign:processDebugManifest
+> Task :feature1:parseDebugLocalResources
+> Task :feature2:compileDebugLibraryResources
+> Task :feature2:parseDebugLocalResources
+> Task :feature1:generateDebugRFile
+> Task :gtBase:compileDebugLibraryResources
+> Task :feature2:generateDebugRFile
+> Task :gtBase:parseDebugLocalResources
+> Task :gtCommon:compileDebugLibraryResources
+> Task :gtCommon:parseDebugLocalResources
+> Task :gtBase:generateDebugRFile
+> Task :gtCommonDesign:compileDebugLibraryResources
+> Task :gtCommon:generateDebugRFile
+> Task :gtCommonDesign:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :feature1:generateDebugBuildConfig
+> Task :gtCommonDesign:generateDebugRFile
+> Task :gtBase:generateDebugBuildConfig
+> Task :app:mergeDebugResources
+> Task :gtBase:kaptGenerateStubsDebugKotlin
+> Task :app:mapDebugSourceSetPaths
+> Task :gtBase:kaptDebugKotlin
+> Task :gtBase:compileDebugKotlin
+> Task :gtBase:javaPreCompileDebug
+> Task :feature1:javaPreCompileDebug
+> Task :gtBase:compileDebugJavaWithJavac
+> Task :feature2:generateDebugBuildConfig
+> Task :gtBase:bundleLibCompileToJarDebug
+> Task :gtCommon:generateDebugBuildConfig
+> Task :feature2:javaPreCompileDebug
+> Task :gtCommon:compileDebugKotlin
+> Task :gtCommonDesign:generateDebugBuildConfig
+> Task :gtCommon:javaPreCompileDebug
+> Task :gtCommonDesign:compileDebugKotlin
+> Task :gtCommon:compileDebugJavaWithJavac
+> Task :gtCommon:bundleLibCompileToJarDebug
+> Task :gtCommonDesign:javaPreCompileDebug
+> Task :feature1:kaptGenerateStubsDebugKotlin
+> Task :feature1:kaptDebugKotlin
+
+> Task :feature1:compileDebugKotlin
+w: /Users/jyoti/StudioProjects/MMT/feature1/src/main/java/com/jyoti/feature1/ui/feature1/Feature1Fragment.kt: (27, 15): 'onActivityCreated(Bundle?): Unit' is deprecated. Deprecated in Java
+
+> Task :feature1:compileDebugJavaWithJavac
+> Task :app:processDebugManifestForPackage
+> Task :feature1:bundleLibCompileToJarDebug
+> Task :feature2:kaptGenerateStubsDebugKotlin
+> Task :app:processDebugResources
+> Task :feature2:kaptDebugKotlin
+
+> Task :feature2:compileDebugKotlin
+w: /Users/jyoti/StudioProjects/MMT/feature2/src/main/java/com/jyoti/feature2/ui/feature2/Feature2Fragment.kt: (27, 15): 'onActivityCreated(Bundle?): Unit' is deprecated. Deprecated in Java
+
+> Task :feature2:compileDebugJavaWithJavac
+> Task :feature2:bundleLibCompileToJarDebug
+> Task :gtCommonDesign:compileDebugJavaWithJavac
+> Task :gtCommonDesign:bundleLibCompileToJarDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :feature1:mergeDebugShaders
+> Task :feature1:compileDebugShaders NO-SOURCE
+> Task :feature1:generateDebugAssets UP-TO-DATE
+> Task :feature1:packageDebugAssets
+> Task :feature2:mergeDebugShaders
+> Task :feature2:compileDebugShaders NO-SOURCE
+> Task :feature2:generateDebugAssets UP-TO-DATE
+> Task :feature2:packageDebugAssets
+> Task :gtBase:mergeDebugShaders
+> Task :gtBase:compileDebugShaders NO-SOURCE
+> Task :gtBase:generateDebugAssets UP-TO-DATE
+> Task :gtBase:packageDebugAssets
+> Task :gtCommon:mergeDebugShaders
+> Task :gtCommon:compileDebugShaders NO-SOURCE
+> Task :gtCommon:generateDebugAssets UP-TO-DATE
+> Task :gtCommon:packageDebugAssets
+> Task :gtCommonDesign:mergeDebugShaders
+> Task :gtCommonDesign:compileDebugShaders NO-SOURCE
+> Task :gtCommonDesign:generateDebugAssets UP-TO-DATE
+> Task :gtCommonDesign:packageDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :gtBase:bundleLibRuntimeToJarDebug
+> Task :gtCommon:bundleLibRuntimeToJarDebug
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :feature1:processDebugJavaRes NO-SOURCE
+> Task :gtCommonDesign:bundleLibRuntimeToJarDebug
+> Task :feature1:bundleLibResDebug
+> Task :feature1:transformDebugClassesWithAsm
+> Task :feature2:transformDebugClassesWithAsm
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :app:kaptDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: /Users/jyoti/StudioProjects/MMT/app/src/main/java/com/jyoti/multimoduleproject/ui/main/MainFragment.kt: (27, 15): 'onActivityCreated(Bundle?): Unit' is deprecated. Deprecated in Java
+
+> Task :app:compileDebugJavaWithJavac
+> Task :feature2:processDebugJavaRes NO-SOURCE
+> Task :feature1:bundleLibRuntimeToJarDebug
+> Task :feature2:bundleLibRuntimeToJarDebug
+> Task :gtBase:processDebugJavaRes NO-SOURCE
+> Task :feature2:bundleLibResDebug
+> Task :gtCommon:processDebugJavaRes NO-SOURCE
+> Task :gtCommon:bundleLibResDebug NO-SOURCE
+> Task :gtCommonDesign:processDebugJavaRes NO-SOURCE
+> Task :gtCommonDesign:bundleLibResDebug NO-SOURCE
+> Task :gtBase:bundleLibResDebug
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :feature1:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :feature1:mergeDebugNativeLibs NO-SOURCE
+> Task :feature1:copyDebugJniLibsProjectOnly
+> Task :feature2:mergeDebugJniLibFolders
+> Task :feature2:mergeDebugNativeLibs NO-SOURCE
+> Task :feature2:copyDebugJniLibsProjectOnly
+> Task :gtBase:mergeDebugJniLibFolders
+> Task :gtBase:mergeDebugNativeLibs NO-SOURCE
+> Task :gtBase:copyDebugJniLibsProjectOnly
+> Task :gtCommon:mergeDebugJniLibFolders
+> Task :gtCommon:mergeDebugNativeLibs NO-SOURCE
+> Task :gtCommon:copyDebugJniLibsProjectOnly
+> Task :gtCommonDesign:mergeDebugJniLibFolders
+> Task :gtCommonDesign:mergeDebugNativeLibs NO-SOURCE
+> Task :gtCommonDesign:copyDebugJniLibsProjectOnly
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:hiltAggregateDepsDebug
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:hiltJavaCompileDebug
+> Task :app:mergeLibDexDebug
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:transformDebugClassesWithAsm
+> Task :app:mergeDebugJavaResource
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeExtDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 6s
+138 actionable tasks: 138 executed
