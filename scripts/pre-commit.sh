@@ -2,7 +2,8 @@
 
 echo "Running lint check..."
 
-./gradlew app:ktlintCheck --daemon
+cd ..
+./gradlew ktlintCheck --daemon
 
 status=$?
 

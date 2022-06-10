@@ -60,10 +60,22 @@ dependencies {
     kapt "com.google.dagger:hilt-android-compiler:$versions.daggerHiltAndroid"
 }
 
-task installGitHook(type: Copy) {
-    from new File(rootProject.rootDir, "scripts/pre-commit")
-    into { new File(rootProject.rootDir, '.git/hooks') }
-    fileMode 0775
+//task installGitHook(type: Copy) {
+//    from new File(rootProject.rootDir, "scripts/pre-commit")
+//    into { new File(rootProject.rootDir, '.git/hooks') }
+//    fileMode 0775
+//}
+
+task myPrebuildTask() {
+//    commandLine 'sh', 'pre-commit.sh'
+
+    doLast {
+        println("start executing shell command")
+        exec {
+//            workingDir "../scripts"
+            commandLine 'sh', '../scripts/pre-commit.sh'
+        }
+    }
 }
 
-tasks.getByPath(':app:preBuild').dependsOn installGitHook
+tasks.getByPath(':app:preBuild').dependsOn myPrebuildTask
